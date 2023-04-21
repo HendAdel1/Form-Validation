@@ -1,0 +1,184 @@
+/* Start Variables */
+:root{
+    --color-yellow:#f0f403;
+}
+/* End Variables */
+
+*{
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/* Start body */
+body{
+    background: linear-gradient(244deg, #020024, #f1056c, #eeff00);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 66%}
+    50%{background-position:100% 35%}
+    100%{background-position:0% 66%}
+}
+/* End body */
+/* ---------------------------------------------------------- */
+/* Start Parent */
+.parent{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 30px rgba(0,0,0,.6);
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+/* End parent */
+/* ---------------------------------------------------------- */
+/* Start Labels */
+label{
+    font-family: monospace, sans-serif;
+}
+.txt-color{
+    color: var(--color-yellow);
+}
+/* End Labels */
+/* ---------------------------------------------------------- */
+/* Start username & Password */
+.user-entry{
+    position: relative;
+}
+.username, .password{
+    font-family: monospace, sans-serif;
+    width: 100%;
+    height: 50%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.username-label, .password-label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.all .user-entry .username:focus ~ .username-label,
+.all .user-entry .password:focus ~ .password-label,
+.all .user-entry .username:valid ~ .username-label,
+.all .user-entry .password:valid ~ .password-label{
+    top: -20px;
+    left: 0;
+    color: var(--color-yellow);
+    font-size: 12px;
+}
+/* End username & Password */
+/* ---------------------------------------------------------- */
+/* Start Gender */
+.genders{
+    display: flex;
+    justify-content: space-around;
+}
+.radios, input[type="checkbox"]{
+    accent-color: var(--color-yellow);
+}
+/* End Gender */
+/* ---------------------------------------------------------- */
+/* Start Languages */
+.languages-part{
+    margin: 3% 0;
+}
+.checkboxes-part{
+    display: flex;
+}
+.checkbox-group, .radio-group{
+    flex-basis: 10rem;
+}
+/* End Languages */
+/* ---------------------------------------------------------- */
+/* Start Countries */
+.selection{
+    padding: 0.5em;
+    width: 100%;
+    color: black;
+}
+select option{
+    color: black;
+}
+/* End Countries */
+/* ---------------------------------------------------------- */
+/* Start Submit Button */
+.btndiv{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--color-yellow);
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border: 1px solid var(--color-yellow);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--color-yellow);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--color-yellow),
+                0 0 25px var(--color-yellow),
+                0 0 50px var(--color-yellow),
+                0 0 100px var(--color-yellow);;
+}
+/* End Submit Button */
+/* ---------------------------------------------------------- */
+.validation-style{
+    font-size: 12px;
+    color:red;
+    margin: 4px 0;
+}
+/* ---------------------------------------------------------- */
+/* Start done.html */
+.parent a{
+    text-decoration: none;
+}
+.parent a:hover{
+    color: var(--color-yellow);
+    text-shadow: 0 0 5px var(--color-yellow);
+}
+/* End done.html */
