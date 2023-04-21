@@ -15,7 +15,7 @@ Validation Rules:
 
 . If the user left the field empty and clicked submit button, a warning red text will appear, if not Valid blue text will appear
 
-*For Contact*
+## For Contact
 Email: 1hend.adel1@gmail.com
 <br>
 LinkedIn: www.linkedin.com/in/hend-adel
